@@ -1,4 +1,4 @@
-msg = "konnichiwa"
+msg = "konnichiwa world"
 puts msg
 
 
