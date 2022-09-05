@@ -1,5 +1,6 @@
 msg = "konnichiwa world"
-puts msg
+sony = "ワイヤレスイヤホン"
+puts sony
 
 
 
