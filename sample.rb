@@ -1,6 +1,5 @@
-msg = "konnichiwa world"
-sony = "ワイヤレスイヤホン"
-puts sony
+msg = "Hello World"
+puts msg
 
 name = gets.chomp
 
