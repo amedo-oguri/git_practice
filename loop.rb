@@ -3,6 +3,9 @@
 
 user_list = ["saitou","tanaka","yamada","shimizu","yanagi","obata"]
 
+# user_listの要素をランダムに入れ替える
+user_list.shuffle!
+
 team_a = []
 team_b = []
 
