@@ -1,6 +1,5 @@
 # 繰り返し処理。Rubyで主に使われるのは each
 # 配列を作成
-#
 
 user_list = ["saitou","tanaka","yamada","shimizu","yanagi","obata"]
 
@@ -18,16 +17,15 @@ user_list.each.with_index do |user,i|
   end
 end
 
-# チームAのメンバー表示
-text = "チームA"
+# \nを入れて改行する(optionキー+ ¥)
+text = "チームA\n"
 team_a.each do |member|
-  # テキストに文字列連結
-  text += member
+  text += "#{member}\n"
 end
-# チームBのメンバーを表示
-text += "チームB"
+
+text += "\nチームB\n"
 team_b.each do |member|
-  text += member
+  text += "#{member}\n"
 end
 
 # チーム分けの情報を表示  
