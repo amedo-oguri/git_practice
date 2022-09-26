@@ -17,15 +17,17 @@ user_list.each.with_index do |user,i|
   end
 end
 
-# \nを入れて改行する(optionキー+ ¥)
-text = "チームA\n"
-team_a.each do |member|
-  text += "#{member}\n"
-end
 
+text = "チームA\n"
+# each.with.indexに変更
+team_a.each.with_index(1) do |member,i|
+  # 各メンバーに番号を振る
+  text += "No.#{i}:#{member}さん\n"
+end
 text += "\nチームB\n"
-team_b.each do |member|
-  text += "#{member}\n"
+team_b.each.with_index(1) do |member,i|
+  # 各メンバーに番号を振る
+  text += "No.#{i}:#{member}さん\n"
 end
 
 # チーム分けの情報を表示  
